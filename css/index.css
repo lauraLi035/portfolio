@@ -76,7 +76,8 @@ body {
   width: 100%;
 }
 
-img.about{
+.about img{
+  text-align: center;
   width: 100%;
 }
 
