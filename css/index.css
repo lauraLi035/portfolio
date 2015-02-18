@@ -76,6 +76,10 @@ body {
   width: 100%;
 }
 
+img.about{
+  width: 100%;
+}
+
 .aboutText{
   width: 50%;
   margin: 0 auto 30px auto;
