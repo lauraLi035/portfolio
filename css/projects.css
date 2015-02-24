@@ -1,7 +1,7 @@
 /*head image
 -------------------------------------------------- */
 
-.laptop-header, .wichase-header, .beambot-header, .littleSheep-header
+.laptop-header, .wichase-header, .natureHeat-header, .littleSheep-header
 {
 	background-image: url('../img/laptop-head.jpg');
 	background-size: cover;
@@ -15,9 +15,8 @@
 .wichase-header{
 	background-image: url('../img/witchase-head.jpg');
 }
-
-.beambot-header{
-	background-image: url('../img/beambot-head.jpg');
+.natureHeat-header{
+	background-image: url('../img/natureHeat-head.jpg');
 }
 
 .littleSheep-header{
@@ -35,26 +34,4 @@
 .text div{
 	font-size: 14px;
 	color: #245497;
-}
-
-/*images libs*/
-.thumb{
-	margin: 10px 30px 0 30px;
-	width: 100%;
-}
-
-.thumb-witchase, .thumb-littleSheep{
-	width: 18.5%;
-	height: auto;
-	margin: 0 0 0 0.5rem;
-	opacity: 1;
-	-webkit-transition: all 1s ease-out;
-}
-
-.thumb-witchase:hover, .littleSheep{
-	opacity: 0.6;
-	-webkit-transition: all 0.5s ease-out;
-}
-.thumb-littleSheep{
-	width: 14.9%;
 }
