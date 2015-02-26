@@ -73,39 +73,113 @@
 
 
 	<!-- content ================================================== -->
-	<div class="row">
-
-		<div class="col-xs-12 col-md-6" style="margin: 30px 0 0 30px">
-			<div ng-controller="wichaseCtrl">
-			    <carousel interval="myInterval">
-			      <slide ng-repeat="slide in slides">
-
-			        <img ng-src="{{slide.img}}" style="margin:auto; width:100%">
-			        {{slide.text}}
-			        <div class="carousel-caption"></div>
-			        
-			      </slide>
-			    </carousel>
-			</div>
-		</div>
-
-		<div class="col-xs-12 col-md-5">
-			<div class="projects text">
-				<h2>
-					A child play
-				</h2>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-3 col-md-3 projects text">
+				<h3>Type</h3>
 				<blockquote>
-					<p>
-						WitChase is a 2D puzzle mobile game designed for Android Tablet. The main play focuses on exporling the game world and combing items. The story begin when the main character, Eithne a witch going on a journey to defeat the evil villain through exploring and crafting items. By fulfilling the NPCs' requests. Story starts when her villages has gone missing...
-					</p>
+						<div>Game Design</div>
+						<div>Group of 5</div>
+				</blockquote>	
+
+				<h3>Role</h3>
+				<blockquote>
+						<div>Interface Designer</div>
+						<div>Interaction Designer</div>
+						<div>User Testing</div>
+						<div>Iconography</div>
+
+						
+				</blockquote>	
+
+				<h3>Tools</h3>
+				<blockquote>
+						<div>Illustrator</div>
+						<div>Photoshop </div>
+						<div>Unity 2D </div>
+
+				</blockquote>	
+
+				<h3>Time</h3>
+				<blockquote>
+						<div>14 week project</div>
+						<div>Jan 2014 - Apr 2014</div>
+
 				</blockquote>	
 			</div>
-		</div>
+			<div class="col-xs-8 col-md-8" style="margin-top: 30px">
+				<div ng-controller="wichaseCtrl">
+				    <carousel interval="myInterval">
+				      <slide ng-repeat="slide in slides">
 
+				        <img ng-src="{{slide.img}}" style="margin:auto; width:100%">
+				        {{slide.text}}
+				        <div class="carousel-caption"></div>
+				        
+				      </slide>
+				    </carousel>
+				</div>
+			</div>
+		</div>
+			<div class="aboutText" >
+				<div class="projects text">
+					<h2>
+						A child play
+					</h2>
+					<p>
+						WitChase is a 2D puzzle mobile game designed for Android Tablet. The main play focuses on exporling the game world and combing items. The story begin when the main character, Eithne a witch going on a journey to defeat the evil villain through exploring and crafting items. By fulfilling the NPCs' requests. 
+					</p>
+				</div>
+			</div>
+
+			<div class="aboutText" >
+				<div class="projects text">
+					<h3>
+						Process
+					</h3>
+					<blockquote>
+						As we were a five member team working on a full term project. We had significant amount of discussions on iteration and refining ideas. We initially draw out the storyboards, characters interface to communicate ideas, laster we practice our idea into digital formats using both Photoshop and Illustrator finally built our game prototype with Unity2D.
+					</blockquote>
+				</div>
+
+				<div ng-controller="wichaseCtrl">
+				    <carousel interval="myInterval">
+				      <slide ng-repeat="sketchesSlide in sketchesSlides">
+
+				        <img ng-src="{{sketchesSlide.img}}" style="margin:auto; width:100%">
+				        {{sketchesSlide.text}}
+				        <div class="carousel-caption"></div>
+				        
+				      </slide>
+				    </carousel>
+				</div>
+			</div>
+
+			<div class="aboutText" >
+				<div class="projects text">
+					<h2>
+						My Role
+					</h2>
+					<blockquote>
+						I led story board development, gameplay iteration, user interface development and user experience refinement. I conducted user testing sessions and collected user feedback through interview, survey and questionnaire. Later I analyzed and reflected user feedback to refine for better usability and game experience.
+					</blockquote>
+				</div>
+			</div>
+
+			<div class="aboutText" >
+				<div class="projects text">
+					<h2>
+						Result
+					</h2>
+					<blockquote>
+						Throughout the process of the project, I developed my user researching and analytical skills which helped me to reflect on feedback to refine user experience and our team ended up being one of the top popular games in public voting during school showcase session.
+					</blockquote>
+				</div>
+			</div>
 	</div>
 
 	<!-- copyright ================================================== -->
-	<div class="copyright">
+	<div class="copyright container">
 		&#169; Laura Li  2015 | created with Bootstrap
 	</div>
 	

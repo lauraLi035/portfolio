@@ -34,4 +34,21 @@ angular.module('portfolio').controller('wichaseCtrl', function ($scope) {
     text: "progression map"
   }
   ];
+
+    var sketchesSlides = $scope.sketchesSlides = [
+  {
+    img: "../img/witchase/sketches1.jpg",
+    text: "game logic sketches"
+  },{
+    img: "../img/witchase/sketches2.jpg",
+    text: "game and inventory interface"
+  },{
+    img: "../img/witchase/sketches3.jpg",
+    text: "sketch of storyboard and progression map"
+  },{
+    img: "../img/witchase/sketches4.png",
+    text: "digital game logic sketches"
+  }
+  ];
+
 });
