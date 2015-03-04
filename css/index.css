@@ -119,7 +119,7 @@ a.projLink, a.addresstext:active {color: #606060; text-decoration: none; }
 .projHolder div {
   opacity: 0;
   position: absolute;
-  width: 70%;
+  width: 100%;
   height: 100px;
   top: 75%;
   padding-left: 20px;
