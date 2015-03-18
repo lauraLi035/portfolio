@@ -1,7 +1,7 @@
 /*head image
 -------------------------------------------------- */
 
-.laptop-header, .wichase-header, .natureHeat-header, .littleSheep-header
+.laptop-header, .wichase-header, .natureHeat-header, .littleSheep-header, .invilo-header
 {
 	background-image: url('../img/laptop-head.jpg');
 	background-size: cover;
@@ -19,6 +19,9 @@
 	background-image: url('../img/natureHeat-head.jpg');
 }
 
+.invilo-header{
+	background-image: url('../img/invilo-head.jpg');
+}
 .littleSheep-header{
 	background-image: url('../img/littleSheep-head.jpg');
 }
