@@ -18,7 +18,7 @@
 	<link href="../css/index.css" rel="stylesheet">
 	<link href="../css/projects.css" rel="stylesheet">
 	<link rel="icon" href="../img/favicon.ico">
-	<script src="wichaseCtrl.js"></script>
+	<script src="inlivoCtrl.js"></script>
 
 
 
@@ -75,8 +75,146 @@
 
 
 	<!-- content ================================================== -->
-	<div class="container">
-		<h2>Current Page Under Construction, Be Back Soon</h2>
+<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-3 projects text">
+				<div class="col-xs-6 col-sm-3 col-md-12">
+				<h3>Type</h3>
+				<blockquote>
+					<div>Features Design</div>
+					<div>Group of 2</div>
+				</blockquote>	
+				</div>
+				
+				<div class="col-xs-6 col-sm-3 col-md-12">
+				<h3>Role</h3>
+				<blockquote>
+					<div>Interaction Designer</div>
+					<div>User Personas</div>
+					<div>User Research</div>
+					<div>Visual Design</div>
+				</blockquote>
+				</div>	
+				
+				<div class="col-xs-6 col-sm-3 col-md-12">
+				<h3>Tools</h3>
+				<blockquote>
+					<div>Illustrator</div>
+					<div>Photoshop </div>
+				</blockquote>
+				</div>	
+				
+				<div class="col-xs-6 col-sm-3 col-md-12">
+				<h3>Time</h3>
+				<blockquote>
+					<div>3 week project</div>
+					<div>Feb 2015 - Feb 2015</div>
+				</blockquote>	
+				</div>
+			</div>
+
+
+			<div class="col-xs-12 col-md-8" style="margin-top:30px" >
+				<img class="featurette-image img-responsive"
+					src="../img/inlivo/overView.jpg" 
+					alt="interaction Image" width="100%" height="450">
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="aboutText" >
+				<div class="projects text">
+					<h2>
+						Design for an Existing System					</h2>
+					<p>
+						We started with qualitative and quantitative user research, I identified the main issue with current App, came up with design opportunities that could be improved by additional features to the  meet the goals of audiences and add value to the application. Through the creation of persona based on provincial users, explaining idea through “Elevator Pitches” and finally develop the interfaces with scenarios. 
+					</p>
+				</div>
+			</div>
+
+			<div class="aboutText" >
+				<div class="text">
+					<h3>
+						Personas
+					</h3>
+					<blockquote>
+						Through in depth research of the application and informal interviews with provincial users, we gained valuable information about our target user. With that in mind, we created two divisor personas with different skills and experience to represent our target users.
+					</blockquote>
+				</div>
+
+				<div ng-controller="inlivoCtrl">
+				    <carousel interval="myInterval">
+				      <slide ng-repeat="persona in personas">
+				        <img ng-src="{{persona.img}}" style="margin:auto">
+				        <div class="carousel-caption"></div>
+				        
+				      </slide>
+				    </carousel>
+				</div>
+
+				
+			</div>
+
+			<div class="aboutText" >
+			<div class="projects text">
+				<h2>
+					Elevator Pitches 
+				</h2>
+				<blockquote>
+					<h3>Group</h3>
+					<p>
+					“GROUP” feature gives accesses to a pair, or a small group of Inlivo users to able to view each other’s daily logs and health related index. This function provides users not only the sense of “they are not working alone”, but also a positive pressure out of competing with their buddies.
+
+					<img class="featurette-image img-responsive inlivoImage"
+					src="../img/inlivo/pitch1.jpg" 
+					alt="interaction Image" >
+					
+					<img class="featurette-image img-responsive"
+					src="../img/inlivo/scenario1.jpg" 
+					alt="interaction Image" >
+
+					
+					</p>
+				</blockquote>
+
+				<blockquote>
+					<h3>Milestone</h3>
+					<p>
+					“MILESTONE” feature allow users to easily understand how much of their health index change is from diet, and how much is from exercise. “Exercise log” is introduced to Inlivo, allows users to log the exercises they do. Then users will see the daily, weekly, and monthly summaries about health index changes contributed by both nutrition intake and exercise in the “millstone section. It provides users more options other than nutrition & diet, to accomplish a healthier life style.
+
+					<img class="featurette-image img-responsive inlivoImage"
+					src="../img/inlivo/pitch2.jpg" 
+					alt="interaction Image" >
+					</p>
+
+					<img class="featurette-image img-responsive"
+					src="../img/inlivo/scenario2.jpg" 
+					alt="interaction Image" >
+
+					
+				</blockquote>
+
+				<blockquote>
+					<h3>Food Editor</h3>
+					<p>
+					“FOOD EDITTING” feature enable users to edit existing food or meals by adding/deleting components or ingredients, as well as create new food or meal by manually enter its ingredients and it’s nutrition factors. This feature will increase the flexibility of logging process, and make the logging experience much smoother.
+
+					<img class="featurette-image img-responsive inlivoImage"
+					src="../img/inlivo/pitch2.jpg" 
+					alt="interaction Image" >
+					
+					<img class="featurette-image img-responsive"
+					src="../img/inlivo/scenario3.jpg" 
+					alt="interaction Image" >
+
+					
+					</p>
+				</blockquote>
+			</div>
+		</div>
+
+		</div>
 	</div>
 
 	<!-- copyright ================================================== -->
