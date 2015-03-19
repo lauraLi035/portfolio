@@ -70,8 +70,11 @@
 	</div>
 
 	<!-- intro ================================================== -->
-	<div class="invilo-header">
+	<div>
+		<div class="invilo-header">
+		</div>
 	</div>
+	
 
 
 	<!-- content ================================================== -->
@@ -125,8 +128,7 @@
 		<div class="row">
 			<div class="aboutText" >
 				<div class="projects text">
-					<h2>
-						Design for an Existing System					</h2>
+					<h2>Design for an Existing System</h2>
 					<p>
 						We started with qualitative and quantitative user research, I identified the main issue with current App, came up with design opportunities that could be improved by additional features to the  meet the goals of audiences and add value to the application. Through the creation of persona based on provincial users, explaining idea through “Elevator Pitches” and finally develop the interfaces with scenarios. 
 					</p>
@@ -152,68 +154,79 @@
 				      </slide>
 				    </carousel>
 				</div>
-
-				
 			</div>
 
 			<div class="aboutText" >
-			<div class="projects text">
-				<h2>
-					Elevator Pitches 
-				</h2>
-				<blockquote>
-					<h3>Group</h3>
-					<p>
-					“GROUP” feature gives accesses to a pair, or a small group of Inlivo users to able to view each other’s daily logs and health related index. This function provides users not only the sense of “they are not working alone”, but also a positive pressure out of competing with their buddies.
+				<div class="projects text">
+					<h2>
+						Elevator Pitches 
+					</h2>
+					<blockquote>
+						<h3>Group</h3>
+						<p>
+						“GROUP” feature gives accesses to a pair, or a small group of Inlivo users to able to view each other’s daily logs and health related index. This function provides users not only the sense of “they are not working alone”, but also a positive pressure out of competing with their buddies.
 
-					<img class="featurette-image img-responsive inlivoImage"
-					src="../img/inlivo/pitch1.jpg" 
-					alt="interaction Image" >
-					
-					<img class="featurette-image img-responsive"
-					src="../img/inlivo/scenario1.jpg" 
-					alt="interaction Image" >
+						<img class="featurette-image img-responsive inlivoImage"
+						src="../img/inlivo/pitch1.jpg" 
+						alt="pitch1 Image" >
+						
+						<img class="featurette-image img-responsive"
+						src="../img/inlivo/scenario1.jpg" 
+						alt="scenario1 Image" >
+						</p>
+					</blockquote>
 
-					
-					</p>
-				</blockquote>
+					<blockquote>
+						<h3>Milestone</h3>
+						<p>
+						“MILESTONE” feature allow users to easily understand how much of their health index change is from diet, and how much is from exercise. “Exercise log” is introduced to Inlivo, allows users to log the exercises they do. Then users will see the daily, weekly, and monthly summaries about health index changes contributed by both nutrition intake and exercise in the “millstone section. It provides users more options other than nutrition & diet, to accomplish a healthier life style.
 
-				<blockquote>
-					<h3>Milestone</h3>
-					<p>
-					“MILESTONE” feature allow users to easily understand how much of their health index change is from diet, and how much is from exercise. “Exercise log” is introduced to Inlivo, allows users to log the exercises they do. Then users will see the daily, weekly, and monthly summaries about health index changes contributed by both nutrition intake and exercise in the “millstone section. It provides users more options other than nutrition & diet, to accomplish a healthier life style.
+						<img class="featurette-image img-responsive inlivoImage"
+						src="../img/inlivo/pitch2.jpg" 
+						alt="pitch2 Image" >
+						</p>
 
-					<img class="featurette-image img-responsive inlivoImage"
-					src="../img/inlivo/pitch2.jpg" 
-					alt="interaction Image" >
-					</p>
+						<img class="featurette-image img-responsive"
+						src="../img/inlivo/scenario2.jpg" 
+						alt="scenario2 Image" >
 
-					<img class="featurette-image img-responsive"
-					src="../img/inlivo/scenario2.jpg" 
-					alt="interaction Image" >
+						
+					</blockquote>
 
-					
-				</blockquote>
+					<blockquote>
+						<h3>Food Editor</h3>
+						<p>
+						“FOOD EDITTING” feature enable users to edit existing food or meals by adding/deleting components or ingredients, as well as create new food or meal by manually enter its ingredients and it’s nutrition factors. This feature will increase the flexibility of logging process, and make the logging experience much smoother.
 
-				<blockquote>
-					<h3>Food Editor</h3>
-					<p>
-					“FOOD EDITTING” feature enable users to edit existing food or meals by adding/deleting components or ingredients, as well as create new food or meal by manually enter its ingredients and it’s nutrition factors. This feature will increase the flexibility of logging process, and make the logging experience much smoother.
+						<img class="featurette-image img-responsive inlivoImage"
+						src="../img/inlivo/pitch3.jpg" 
+						alt="pitch3 Image" >
+						
+						<img class="featurette-image img-responsive"
+						src="../img/inlivo/scenario3.jpg" 
+						alt="scenario3 Image" >
 
-					<img class="featurette-image img-responsive inlivoImage"
-					src="../img/inlivo/pitch3.jpg" 
-					alt="interaction Image" >
-					
-					<img class="featurette-image img-responsive"
-					src="../img/inlivo/scenario3.jpg" 
-					alt="interaction Image" >
-
-					
-					</p>
-				</blockquote>
+						
+						</p>
+					</blockquote>
+				</div>
 			</div>
-		</div>
 
+			<div class="aboutText" >
+				<div class="text">
+					<h3>
+						Final View
+					</h3>
+				</div>
+
+				<div ng-controller="inlivoCtrl">
+				    <carousel interval="myInterval">
+				      <slide ng-repeat="slide in slides">
+				        <img ng-src="{{slide.img}}" style="margin:auto">
+				      </slide>
+				    </carousel>
+				</div>
+			</div>
 		</div>
 	</div>
 
