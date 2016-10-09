@@ -5,9 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Week1</title>
-
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
-    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.js"></script>
   
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 
@@ -17,13 +14,11 @@
 
 	<link href="../../css/index.css" rel="stylesheet">
 	<link href="../../css/projects.css" rel="stylesheet">
-	<link rel="icon" href="../img/favicon.ico">
-	<script src="inlivoCtrl.js"></script>
+	<link rel="icon" href="../../img/favicon.ico">
 
 
 
 </head>
-
 <body>
 	<!-- navbar ================================================== -->
 	<div class="container">
@@ -34,14 +29,7 @@
 			</a>
 			<div class="head">
 
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div>
+				
 
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
@@ -87,8 +75,8 @@
 			<div class="col-xs-6 col-sm-offset-2 col-sm-4">
 			<h3>Topics Covered</h3>
 			<blockquote>
-				<div>webpage formatting</div>
-				<div>basic HTML <></div>
+				<div>HTML layout elements</div>
+				<div>basic HTML &lt; &gt;</div>
 				<div>images</div>
 				<div>hyperlinks</div>
 				<div>file management</div>
@@ -100,9 +88,9 @@
 			<div class="col-xs-6 col-sm-4 ">
 			<h3>In class Examples</h3>
 			<blockquote>
-				<div><a href="1.1.html">Example 1</a></div>
-				<div><a href="1.2.html">Example 2</a></div>
-				<div><a href="week1Example.zip">download as zip</a></div>
+				<div><a href="example/1.1.html">Example 1</a></div>
+				<div><a href="example1.2.html">Example 2</a></div>
+				<div><a href="example/example.zip">download as zip</a></div>
 			</blockquote>
 			</div>	
 
@@ -118,22 +106,68 @@
 					</h3>
 					<div class="list-group">
 					  <a class="list-group-item list-group-item-action">
-					    <h5 class="list-group-item-heading">Week1 -  Intro to programming</h5>
-					    <p class="list-group-item-text">basic structure of plan basic web pages, tags, file management.</p>
+					    <h5 class="list-group-item-heading">HTML Layout Elements</h5>
+					    <p class="list-group-item-text">
+					    	Each HTML file must starts with &lt;html&gt; and end with &lt;/html&gt; tag<br>
+
+					    	&lt;head&gt; - defines the title of the document in &lt;title&gt; <br>
+
+					    	&lt;body&gt; - contains the information you want to display <br>
+
+					    	&lt; &gt; is a open tag and &lt;/&gt; is a closed tag <br>
+					    </p>
 					  </a>
 
 					  <a class="list-group-item list-group-item-action">
-					    <h5 class="list-group-item-heading">Week2 - </h5>
-					    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+					    <h5 class="list-group-item-heading">basic HTML &lt; &gt;</h5>
+					    <p class="list-group-item-text">
+					    	&lt; h1 &gt; element defines a large  <br>
+					    	&lt; h2 &gt; element defines a smaller heading <br>
+					    	you try from &lt; h1 &gt; to &lt; h6 &gt;<br>
+					    	&lt; p &gt;element defines a paragraph<br>
+					    	&lt; br &gt;indicates a line break, white space don't work in HTML
+					    	
+					    </p>
 					  </a>
 
 					  <a class="list-group-item list-group-item-action">
-					    <h5 class="list-group-item-heading">Week3 - </h5>
-					    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+						    <h5 class="list-group-item-heading">Images</h5>
+						    <p class="list-group-item-text">Images are defined with the &lt; img &gt;<br>
+						    The source file (link), alternative text (will show note when it is not working), width, and height are provided as attributes
+						    <br>
+						    <br>
+						    <div>
+						    &lt; img src="pokemon.jpg" alt="pokemon not working" width="490" height="245"&gt; </div>
+						    </p>
 					  </a>
 					  <a class="list-group-item list-group-item-action">
-					    <h5 class="list-group-item-heading">Week4 - </h5>
-					    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+					    <h5 class="list-group-item-heading">hyperlinks </h5>
+						    <p class="list-group-item-text">
+						    	link page to page, 2type of URL,
+						    	think URL as address
+						    	<ol>
+						    		<li>destination address ie. http://www.google.com</li>
+
+						    		<li>relative URL, think as you are at home and give directions base on your location
+
+							    		<ul>
+							    			<li>name the file to call open</li>
+							    			<li>../ to go to last directory</li>
+							    		</ul>
+						    		</li>
+						    	</ol>
+						    </p>
+					    </a>
+
+					    <a class="list-group-item list-group-item-action">
+						    <h5 class="list-group-item-heading">file management</h5>
+						    <p class="list-group-item-text">
+						    	<ol>
+						    		<li> save same type of file together. IE, images in one file, HTML in one files</li>
+
+						    		<li>save a group of files together IE, save all the files from today's in week1</li>
+						    	</ol>
+						    </p>
 					  </a>
 					  
 					</div>
@@ -147,9 +181,16 @@
 					</h3>
 					<div class="list-group">
 
-						<li class="list-group-item list-group-item-action list-group-item-warning">Instructor: Laura Li</li>
-						<li class="list-group-item list-group-item-action list-group-item-info">Email: xll@sfu.ca</li>
-						<li class="list-group-item list-group-item-action list-group-item-warning">Phone: 604-728-5018</li>
+						<li class="list-group-item list-group-item-action list-group-item-warning">
+							<ol>
+								<li>finish in class exercises</li>
+								<li>create a file that contains all the potencial files and an index page for each files for the rest of 12 weeks.</li>
+								<li>modify today's home./index page on the root directory so that it links to each weeks' file</li>
+							</ol>
+						</li>
+
+						<li class="list-group-item list-group-item-action list-group-item-info">When finish please email to Laura: <a href="mailto:xll@sfu.ca ">xll@sfu.ca </a>or save in a USB and bring to class</li>
+						
 
 					</div>
 				</div>
@@ -158,11 +199,14 @@
 			<div class="aboutText" >
 				<div class="text">
 					<h3>
-						References used for today
+						additional references for today
 					</h3>
 					<div class="list-group">
-						<a class="list-group-item list-group-item-action list-group-item-info" href="http://www.w3schools.com//">W3school</a></li>
-						<a class="list-group-item list-group-item-action list-group-item-warning" href="http://getbootstrap.com/">bootstrap</a></li>
+						<a class="list-group-item list-group-item-action list-group-item-warning" href="http://http://www.w3schools.com/html/html_paragraphs.asp">paragraphs from W3school</a>
+
+						<a class="list-group-item list-group-item-action list-group-item-info" href="http://www.w3schools.com/html/html_links.asp">link from W3school</a></li>
+
+						<a class="list-group-item list-group-item-action list-group-item-warning" href="http://www.w3schools.com/html/html_images.asp">image from W3school</a></li>
 					</div>
 				</div>
 			</div>
