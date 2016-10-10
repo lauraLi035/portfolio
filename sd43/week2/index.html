@@ -83,22 +83,22 @@
 			<div class="col-xs-6 col-sm-offset-2 col-sm-4">
 			<h3>Topics Covered</h3>
 			<blockquote>
-				<div>webpage formatting</div>
-				<div>basic HTML <></div>
-				<div>images</div>
-				<div>hyperlinks</div>
-				<div>file management</div>
-				<div>styling in HTML</div>
-
+				<div>list</div>
+				<div>preformatted text</div>
+				<div>general styles</div>
+				<div>&lt; span&gt;</div>
+				<div>more attribute on &lt; img&gt;</div>
+				<div>&lt; a&gt; combine with image</div>
+				
 			</blockquote>	
 			</div>
 			
 			<div class="col-xs-6 col-sm-4 ">
 			<h3>In class Examples</h3>
 			<blockquote>
-				<div><a href="1.1.html">Example 1</a></div>
-				<div><a href="1.2.html">Example 2</a></div>
-				<div><a href="week1Example.zip">download as zip</a></div>
+				<div><a href="example/example1.html">Example 1</a></div>
+				<div><a href="example/example2.html">Example 2</a></div>
+				<div><a href="example/example.zip">download as zip</a></div>
 			</blockquote>
 			</div>	
 
@@ -114,22 +114,66 @@
 					</h3>
 					<div class="list-group">
 					  <a class="list-group-item list-group-item-action">
-					    <h5 class="list-group-item-heading">Week1 -  Intro to programming</h5>
-					    <p class="list-group-item-text">basic structure of plan basic web pages, tags, file management.</p>
+					    <h5 class="list-group-item-heading">lists</h5>
+					    <p class="list-group-item-text">
+						    	2 type of list, orderd list and unordered List
+					    	<ol>
+					    		<li>orderd list
+					    			<div><ol>&lt; ol&gt;
+						    			<li>&lt; li&gt; item&lt; /li&gt;</li>
+						    			<li>&lt; li&gt; item&lt; /li&gt;</li>
+						    		&lt; /ol&gt;
+						    		</ol></div>
+						    	</li>
+
+						    	<li>unordered List
+					    			<div><ul>&lt; ul&gt;
+						    			<li>&lt; li&gt; item&lt; /li&gt;</li>
+						    			<li>&lt; li&gt; item&lt; /li&gt;</li>
+						    		&lt; /ul&gt;
+						    		</ul></div>
+						    	</li>
+					    	</ol>
+						</p>
 					  </a>
 
 					  <a class="list-group-item list-group-item-action">
-					    <h5 class="list-group-item-heading">Week2 - </h5>
-					    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+					    <h5 class="list-group-item-heading">reformatted text</h5>
+					    <p class="list-group-item-text">&lt; pre&gt;
+					    displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:</p>
 					  </a>
 
 					  <a class="list-group-item list-group-item-action">
-					    <h5 class="list-group-item-heading">Week3 - </h5>
-					    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+					    <h5 class="list-group-item-heading">general styles</h5>
+					    <p class="list-group-item-text">
+					    	gather the styles that we can do and define, gather them together in head, inside &lt; style &gt; for a clearner code.
+					    </p>
 					  </a>
 					  <a class="list-group-item list-group-item-action">
-					    <h5 class="list-group-item-heading">Week4 - </h5>
-					    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+					    <h5 class="list-group-item-heading">&lt; span&gt;</h5>
+					    <p class="list-group-item-text">Very effective for customize &lt; span style="color:red"&gt;<span style="color:red">highlight. </span> &lt; /span&gt;</></p>
+					  </a>
+
+					  <a class="list-group-item list-group-item-action">
+						    <h5 class="list-group-item-heading">more attribute on &lt; img&gt;</h5>
+						    <p class="list-group-item-text">Images are defined with the &lt; img &gt;<br>
+						    The source file (URL), alternative text (will show note when it is not working), width, and height are provided as attributes
+						    <br>
+						    <br>
+						    <div>
+						    &lt; img src="pokemon.jpg" alt="pokemon not working" width="490" height="245"&gt; </div>
+						    <br>
+						    <div>
+						    &lt; img src="http://www.pokemongo.com/static/assets/images/pokemon_go_logo.png" alt="pokemon not working" width="50%" height="300"&gt; </div>
+						    </p>
+					  </a>
+
+					  <a class="list-group-item list-group-item-action">
+						    <h5 class="list-group-item-heading">&lt; a&gt; combine with image</h5>
+						    <p class="list-group-item-text">Image as a part of link <br>
+						     <div>
+						    &lt; a href="http://www.pokemon.com/us/"&gt; img src="pokemon.jpg" alt="pokemon not working" width="50" height="50"&gt; &lt; /a&gt;</div>
+						    </p>
 					  </a>
 					  
 					</div>
@@ -143,9 +187,16 @@
 					</h3>
 					<div class="list-group">
 
-						<li class="list-group-item list-group-item-action list-group-item-warning">Instructor: Laura Li</li>
-						<li class="list-group-item list-group-item-action list-group-item-info">Email: xll@sfu.ca</li>
-						<li class="list-group-item list-group-item-action list-group-item-warning">Phone: 604-728-5018</li>
+						<li class="list-group-item list-group-item-action list-group-item-warning">
+							<ol>
+								<li>finish in-class exercises</li>
+								<li>write a poem using &lt; pre&gt; and have at least 5 imags, set at least one image as a part of link; at least 5 attributes ie change font color, background color,font size, bold... </li>
+								<li>link today's work with the rest of the files that was created on week 1</li>
+							</ol>
+						</li>
+
+						<li class="list-group-item list-group-item-action list-group-item-info">When finish please email to Laura: <a href="mailto:xll@sfu.ca ">xll@sfu.ca </a>or save in a USB and bring to class</li>
+						
 
 					</div>
 				</div>
@@ -154,13 +205,14 @@
 			<div class="aboutText" >
 				<div class="text">
 					<h3>
-						References used for today
+						additional references for today
 					</h3>
 					<div class="list-group">
-						<a class="list-group-item list-group-item-action list-group-item-info" href="http://www.w3schools.com//">W3school</a></li>
-						<a class="list-group-item list-group-item-action list-group-item-warning" href="http://getbootstrap.com/">bootstrap</a></li>
+						<a class="list-group-item list-group-item-action list-group-item-warning" href="http://www.w3schools.com/html/html_blocks.asp">HTML Block and Inline Elements from W3school</a>
+
+						<a class="list-group-item list-group-item-action list-group-item-info" href="http://www.w3schools.com/tags/tag_img.asp">HTML &lt; img&gt; Tag from W3school</a></li>
 					</div>
-				</div>
+				</div> 
 			</div>
 
 		</div>
