@@ -4,7 +4,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Week2</title>
+	<title>Week3</title>
   
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 
@@ -26,7 +26,7 @@
 		<nav class="navbar navbar-default navbar-fixed-top">
 			
 			<a href="../" class="navbar-brand">
-				Introduction to the Internet and Web Development
+				Introduction to Web Development
 			</a>
 			<div class="head">
 
@@ -45,21 +45,18 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Homeworks <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="../week1#hw">week1</a></li>
-								<li><a href="../week2#hw">week2</a></li>
-								<li><a href="../week3#hw">week3</a></li>
 								<li><a href="../week4#hw">week4</a></li>
-								
-								<!-- <li><a href="../week5#hw">week5</a></li>
+								<li><a href="../week5#hw">week5</a></li>
 								<li><a href="../week6#hw">week6</a></li>
 								<li><a href="../week7#hw">week7</a></li>
+								
+								<!-- 
 								<li><a href="../week8#hw">week8</a></li>
 								<li><a href="../week9#hw">week9</a></li>
 								<li><a href="../week10#hw">week10</a></li>
 								<li><a href="../week11#hw">week11</a></li>
 								<li><a href="../week12#hw">week12</a></li> -->
-							</ul>
-						</li>
+							</ul>						</li>
 
 						<li><a href="../#Timeline">Timeline</a></li>
 						<li><a href="../#Contact">Contact</a></li>
@@ -83,12 +80,9 @@
 			<div class="col-xs-6 col-sm-offset-2 col-sm-4">
 			<h3>Topics Covered</h3>
 			<blockquote>
-				<div>list</div>
-				<div>preformatted text</div>
-				<div>general styles</div>
-				<div>&lt; span&gt;</div>
-				<div>more attribute on &lt; img&gt;</div>
-				<div>&lt; a&gt; combine with image</div>
+				<div>simple CSS rules</div>
+				<div>to select based on element</div>
+				<div>.class</div>
 				
 			</blockquote>	
 			</div>
@@ -97,8 +91,10 @@
 			<h3>In class Examples</h3>
 			<blockquote>
 				<div><a href="example/example1.html">Example 1</a></div>
-				<div><a href="example/example2.html">Example 2</a></div>
 				<div><a href="example/example.zip">download as zip</a></div>
+
+				<div><a href="example/quiz1.html">quiz </a></div>
+
 			</blockquote>
 			</div>	
 
@@ -114,68 +110,40 @@
 					</h3>
 					<div class="list-group">
 					  <a class="list-group-item list-group-item-action">
-					    <h5 class="list-group-item-heading">lists</h5>
+					    <h5 class="list-group-item-heading">simple CSS rules</h5>
 					    <p class="list-group-item-text">
-						    	2 type of list, orderd list and unordered List
-					    	<ol>
-					    		<li>orderd list
-					    			<div><ol>&lt; ol&gt;
-						    			<li>&lt; li&gt; item&lt; /li&gt;</li>
-						    			<li>&lt; li&gt; item&lt; /li&gt;</li>
-						    		&lt; /ol&gt;
-						    		</ol></div>
-						    	</li>
-
-						    	<li>unordered List
-					    			<div><ul>&lt; ul&gt;
-						    			<li>&lt; li&gt; item&lt; /li&gt;</li>
-						    			<li>&lt; li&gt; item&lt; /li&gt;</li>
-						    		&lt; /ul&gt;
-						    		</ul></div>
-						    	</li>
-					    	</ol>
+					    	As we have seen from last class, the &lt; style&gt; on the top, tells HTML file this is a CSS property, so please treat it differently. 
 						</p>
 					  </a>
 
 					  <a class="list-group-item list-group-item-action">
-					    <h5 class="list-group-item-heading">reformatted text</h5>
-					    <p class="list-group-item-text">&lt; pre&gt;
-					    displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:</p>
-					  </a>
-
-					  <a class="list-group-item list-group-item-action">
-					    <h5 class="list-group-item-heading">general styles</h5>
+					    <h5 class="list-group-item-heading">to select based on element</h5>
 					    <p class="list-group-item-text">
-					    	gather the styles that we can do and define, gather them together in head, inside &lt; style &gt; for a clearner code.
+					    	This is the problem that we had last class, where change one style for &lt; p&gt; on the top would change all the styles for &lt; p&gt;.
 					    </p>
 					  </a>
-					  <a class="list-group-item list-group-item-action">
-					    <h5 class="list-group-item-heading">&lt; span&gt;</h5>
-					    <p class="list-group-item-text">Very effective for customize &lt; span style="color:red"&gt;<span style="color:red">highlight. </span> &lt; /span&gt;</></p>
-					  </a>
 
 					  <a class="list-group-item list-group-item-action">
-						    <h5 class="list-group-item-heading">more attribute on &lt; img&gt;</h5>
-						    <p class="list-group-item-text">Images are defined with the &lt; img &gt;<br>
-						    The source file (URL), alternative text (will show note when it is not working), width, and height are provided as attributes
-						    <br>
-						    <br>
-						    <div>
-						    &lt; img src="pokemon.jpg" alt="pokemon not working" width="490" height="245"&gt; </div>
-						    <br>
-						    <div>
-						    &lt; img src="http://www.pokemongo.com/static/assets/images/pokemon_go_logo.png" alt="pokemon not working" width="50%" height="300"&gt; </div>
-						    </p>
+					    <h5 class="list-group-item-heading">.class</h5>
+					    <p class="list-group-item-text">
+					    	We use .class to give each &lt; &gt; seperate names so the HTML file and recognize it. Since class is assigning same properties to a group under the same name.<br> *There should be no spaces in the class name, due to space means other things in CSS*
+					    </p>
+					  </a>		
+
+					   <a class="list-group-item list-group-item-action">
+					    <h5 class="list-group-item-heading">.class Quiz</h5>
+					    <p class="list-group-item-text">
+					    	please download above file and apply some styles to it :)
+
+					    	<ol>
+					    		There are already classes on most of the words about apples and bananas
+					    		<li>I want all 'apples' class all in red font</li>
+					    		<li>I want all 'bananas' class all yellow font</li>
+					    		<li>OPPS! I forget to add classes on the last line on the &lt;strong &gt; tags! Could you please help me to classes in that line?</li>
+					    	</ol>
+					    </p>
 					  </a>
 
-					  <a class="list-group-item list-group-item-action">
-						    <h5 class="list-group-item-heading">&lt; a&gt; combine with image</h5>
-						    <p class="list-group-item-text">Image as a part of link <br>
-						     <div>
-						    &lt; a href="http://www.pokemon.com/us/"&gt; img src="pokemon.jpg" alt="pokemon not working" width="50" height="50"&gt; &lt; /a&gt;</div>
-						    </p>
-					  </a>
-					  
 					</div>
 				</div>
 			</div>
@@ -190,7 +158,7 @@
 						<li class="list-group-item list-group-item-action list-group-item-warning">
 							<ol>
 								<li>finish in-class exercises</li>
-								<li>write a poem using &lt; pre&gt; and have at least 5 imags, set at least one image as a part of link; at least 5 attributes ie change font color, background color,font size, bold... </li>
+								<li>go back to last week's homework, and change all the styles to .class format </li>
 								<li>link today's work with the rest of the files that was created on week 1</li>
 							</ol>
 						</li>
@@ -202,7 +170,7 @@
 				</div>
 			</div>
 
-			<div class="aboutText" >
+			<!-- <div class="aboutText" >
 				<div class="text">
 					<h3>
 						additional references for today
@@ -213,7 +181,7 @@
 						<a class="list-group-item list-group-item-action list-group-item-info" href="http://www.w3schools.com/tags/tag_img.asp">HTML &lt; img&gt; Tag from W3school</a></li>
 					</div>
 				</div> 
-			</div>
+			</div>  -->
 
 		</div>
 	</div>
