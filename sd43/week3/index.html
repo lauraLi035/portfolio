@@ -4,7 +4,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Week2</title>
+	<title>Week1</title>
   
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 
@@ -19,17 +19,15 @@
 
 
 </head>
-
 <body>
 	<!-- navbar ================================================== -->
-	<div class="container">
-		<nav class="navbar navbar-default navbar-fixed-top">
-			
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">		
 			<a href="../" class="navbar-brand">
 				Introduction to Web Development
 			</a>
 			<div class="head">
-
+			
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 						<span class="sr-only">Toggle navigation</span>
@@ -38,6 +36,7 @@
 						<span class="icon-bar"></span>
 					</button>
 				</div>
+				
 
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
@@ -65,8 +64,11 @@
 					</ul>
 				</div>
 			</div>
-		</nav>
-	</div>
+		</div>
+	</nav>
+
+
+	
 
 
 	<!-- content ================================================== -->
@@ -81,13 +83,13 @@
 			<div class="col-xs-6 col-sm-offset-2 col-sm-4">
 			<h3>Topics Covered</h3>
 			<blockquote>
-				<div>list</div>
-				<div>preformatted text</div>
-				<div>general styles</div>
-				<div>&lt; span&gt;</div>
-				<div>more attribute on &lt; img&gt;</div>
-				<div>&lt; a&gt; combine with image</div>
-				
+				<div>HTML layout elements</div>
+				<div>basic HTML &lt; &gt;</div>
+				<div>images</div>
+				<div>hyperlinks</div>
+				<div>file management</div>
+				<div>styling in HTML</div>
+
 			</blockquote>	
 			</div>
 			
@@ -112,68 +114,56 @@
 					</h3>
 					<div class="list-group">
 					  <a class="list-group-item list-group-item-action">
-					    <h5 class="list-group-item-heading">lists</h5>
+					    <h5 class="list-group-item-heading">HTML Layout Elements</h5>
 					    <p class="list-group-item-text">
-						    	2 type of list, orderd list and unordered List
-					    	<ol>
-					    		<li>orderd list
-					    			<div><ol>&lt; ol&gt;
-						    			<li>&lt; li&gt; item&lt; /li&gt;</li>
-						    			<li>&lt; li&gt; item&lt; /li&gt;</li>
-						    		&lt; /ol&gt;
-						    		</ol></div>
-						    	</li>
+					    	Each HTML file must starts with &lt;html&gt; and end with &lt;/html&gt; tag<br>
 
-						    	<li>unordered List
-					    			<div><ul>&lt; ul&gt;
-						    			<li>&lt; li&gt; item&lt; /li&gt;</li>
-						    			<li>&lt; li&gt; item&lt; /li&gt;</li>
-						    		&lt; /ul&gt;
-						    		</ul></div>
-						    	</li>
-					    	</ol>
-						</p>
-					  </a>
+					    	&lt;head&gt; - defines the title of the document in &lt;title&gt;<br>
 
-					  <a class="list-group-item list-group-item-action">
-					    <h5 class="list-group-item-heading">preformatted text</h5>
-					    <p class="list-group-item-text">&lt; pre&gt;
-					    displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:</p>
-					  </a>
+					    	&lt;body&gt; - contains the information you want to display <br>
 
-					  <a class="list-group-item list-group-item-action">
-					    <h5 class="list-group-item-heading">general styles</h5>
-					    <p class="list-group-item-text">
-					    	gather the styles that we can do and define, gather them together in head, inside &lt; style &gt; for a clearner code.
+					    	&lt; &gt; is a open tag and &lt;/&gt; is a closed tag <br>
 					    </p>
 					  </a>
+
 					  <a class="list-group-item list-group-item-action">
-					    <h5 class="list-group-item-heading">&lt; span&gt;</h5>
-					    <p class="list-group-item-text">Very effective for customize &lt; span style="color:red"&gt;<span style="color:red">highlight. </span> &lt; /span&gt;</></p>
+					    <h5 class="list-group-item-heading">basic HTML &lt; &gt;</h5>
+					    <p class="list-group-item-text">
+					    	&lt; h1 &gt; element defines a large  <br>
+					    	&lt; h2 &gt; element defines a smaller heading <br>
+					    	you try from &lt; h1 &gt; to &lt; h6 &gt;<br>
+					    	&lt; p &gt;element defines a paragraph<br>
+					    	&lt; br &gt;indicates a line break, white space don't work in HTML
+					    	
+					    </p>
 					  </a>
 
 					  <a class="list-group-item list-group-item-action">
-						    <h5 class="list-group-item-heading">more attribute on &lt; img&gt;</h5>
-						    <p class="list-group-item-text">Images are defined with the &lt; img &gt;<br>
-						    The source file (URL), alternative text (will show note when it is not working), width, and height are provided as attributes
+						    <h5 class="list-group-item-heading">Images</h5>
+						    <p class="list-group-item-text">Images are defined with the &lt; img &gt;<br> with provided source file (URL)
 						    <br>
-						    <br>
-						    <div>
-						    &lt; img src="pokemon.jpg" alt="pokemon not working" width="490" height="245"&gt; </div>
-						    <br>
-						    <div>
-						    &lt; img src="http://www.pokemongo.com/static/assets/images/pokemon_go_logo.png" alt="pokemon not working" width="50%" height="300"&gt; </div>
+						    <div> &lt; img src="pokemon.jpg"&gt; </div>
 						    </p>
 					  </a>
-
 					  <a class="list-group-item list-group-item-action">
-						    <h5 class="list-group-item-heading">&lt; a&gt; combine with image</h5>
-						    <p class="list-group-item-text">Image as a part of link <br>
-						     <div>
-						    &lt; a href="http://www.pokemon.com/us/"&gt; img src="pokemon.jpg" alt="pokemon not working" width="50" height="50"&gt; &lt; /a&gt;</div>
+					    <h5 class="list-group-item-heading">hyperlinks </h5>
+						    <p class="list-group-item-text">
+						    	link page to page, 2type of URL,
+						    	think URL as address
+						    	<ol>
+						    		<li>destination address ie. http://www.google.com</li>
+
+						    		<li>relative URL, think as you are at home and give directions base on your location
+
+							    		<ul>
+							    			<li>name the file to call open</li>
+							    			<li>../ to go to last directory</li>
+							    		</ul>
+						    		</li>
+						    	</ol>
 						    </p>
-					  </a>
-					  
+					    </a>
+
 					</div>
 				</div>
 			</div>
@@ -187,9 +177,12 @@
 
 						<li class="list-group-item list-group-item-action list-group-item-warning">
 							<ol>
-								<li>finish in-class exercises</li>
-								<li>write a poem using &lt; pre&gt; and have at least 5 imags, set at least one image as a part of link; at least 5 attributes ie change font color, background color,font size, bold... </li>
-								<li>link today's work with the rest of the files that was created on week 1</li>
+								<li>follow the example on the top and modify your own version of 2 pages, with image, and link 2 pages together</li>
+
+								<li>Advanced students **</li>
+								<li>create a file that contains all the potencial files and an index page for each files for the rest of 12 weeks.</li>
+								<li>modify today's home./index page on the root directory so that it links to each weeks' file</li>
+								
 							</ol>
 						</li>
 
@@ -206,9 +199,11 @@
 						additional references for today
 					</h3>
 					<div class="list-group">
-						<a class="list-group-item list-group-item-action list-group-item-warning" href="http://www.w3schools.com/html/html_blocks.asp">HTML Block and Inline Elements from W3school</a>
+						<a class="list-group-item list-group-item-action list-group-item-warning" href="http://www.w3schools.com/html/html_paragraphs.asp">paragraphs from W3school</a>
 
-						<a class="list-group-item list-group-item-action list-group-item-info" href="http://www.w3schools.com/tags/tag_img.asp">HTML &lt; img&gt; Tag from W3school</a></li>
+						<a class="list-group-item list-group-item-action list-group-item-info" href="http://www.w3schools.com/html/html_links.asp">link from W3school</a></li>
+
+						<a class="list-group-item list-group-item-action list-group-item-warning" href="http://www.w3schools.com/html/html_images.asp">image from W3school</a></li>
 					</div>
 				</div> 
 			</div>
