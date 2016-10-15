@@ -1,0 +1,180 @@
+<html ng-app="portfolio">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Week12</title>
+
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.js"></script>
+  
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+	<link href="../../css/index.css" rel="stylesheet">
+	<link href="../../css/projects.css" rel="stylesheet">
+	<link rel="icon" href="../img/favicon.ico">
+	<script src="inlivoCtrl.js"></script>
+
+
+
+</head>
+
+<body>
+	<!-- navbar ================================================== -->
+	<div class="container">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			
+			<a href="../" class="navbar-brand">
+				Introduction to the Internet and Web Development
+			</a>
+			<div class="head">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Homeworks <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="../week1#hw">week1</a></li>
+								<li><a href="../week2#hw">week2</a></li>
+								<li><a href="../week3#hw">week3</a></li>
+								<li><a href="../week4#hw">week4</a></li>
+								
+								<!-- <li><a href="../week5#hw">week5</a></li>
+								<li><a href="../week6#hw">week6</a></li>
+								<li><a href="../week7#hw">week7</a></li>
+								<li><a href="../week8#hw">week8</a></li>
+								<li><a href="../week9#hw">week9</a></li>
+								<li><a href="../week10#hw">week10</a></li>
+								<li><a href="../week11#hw">week11</a></li>
+								<li><a href="../week12#hw">week12</a></li> -->
+							</ul>
+						</li>
+
+						<li><a href="../#Timeline">Timeline</a></li>
+						<li><a href="../#Contact">Contact</a></li>
+						<li><a href="../#Resources">Resources</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+
+	<!-- content ================================================== -->
+<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-12" style="margin-top:30px" >
+				<img class="featurette-image img-responsive"
+					src="../../img/coming.jpg" 
+					alt="interaction Image" width="100%">
+			</div>
+
+			<div class="col-xs-6 col-sm-offset-2 col-sm-4">
+			<h3>Topics Covered</h3>
+			<blockquote>
+				<div>webpage formatting</div>
+				<div>basic HTML <></div>
+				<div>images</div>
+				<div>hyperlinks</div>
+				<div>file management</div>
+				<div>styling in HTML</div>
+
+			</blockquote>	
+			</div>
+			
+			<div class="col-xs-6 col-sm-6">
+				<h3>Somthing amazing is in the process</h3>
+
+<!-- 				<blockquote>
+					<div><a href="1.1.html">Example 1</a></div>
+					<div><a href="1.2.html">Example 2</a></div>
+					<div><a href="week1Example.zip">download as zip</a></div>
+				</blockquote> -->
+			</div>	
+
+		</div>
+
+
+		<!-- <div class="row">
+
+			<div class="aboutText">
+				<div class="text">
+					<h3>
+						Key points
+					</h3>
+					<div class="list-group">
+					  <a class="list-group-item list-group-item-action">
+					    <h5 class="list-group-item-heading">Week1 -  Intro to programming</h5>
+					    <p class="list-group-item-text">basic structure of plan basic web pages, tags, file management.</p>
+					  </a>
+
+					  <a class="list-group-item list-group-item-action">
+					    <h5 class="list-group-item-heading">Week2 - </h5>
+					    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+					  </a>
+
+					  <a class="list-group-item list-group-item-action">
+					    <h5 class="list-group-item-heading">Week3 - </h5>
+					    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+					  </a>
+					  <a class="list-group-item list-group-item-action">
+					    <h5 class="list-group-item-heading">Week4 - </h5>
+					    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+					  </a>
+					  
+					</div>
+				</div>
+			</div>
+
+			<div class="aboutText" id="hw">
+				<div class="text">
+					<h3>
+						Homework 
+					</h3>
+					<div class="list-group">
+
+						<li class="list-group-item list-group-item-action list-group-item-warning">Instructor: Laura Li</li>
+						<li class="list-group-item list-group-item-action list-group-item-info">Email: xll@sfu.ca</li>
+						<li class="list-group-item list-group-item-action list-group-item-warning">Phone: 604-728-5018</li>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="aboutText" >
+				<div class="text">
+					<h3>
+						References used for today
+					</h3>
+					<div class="list-group">
+						<a class="list-group-item list-group-item-action list-group-item-info" href="http://www.w3schools.com//">W3school</a></li>
+						<a class="list-group-item list-group-item-action list-group-item-warning" href="http://getbootstrap.com/">bootstrap</a></li>
+					</div>
+				</div>
+			</div> -->
+
+		</div>
+	</div>
+
+	<!-- copyright ================================================== -->
+	<div class="copyright container">
+		&#169; Laura Li  2016 | created with Bootstrap
+	</div>
+	
+</body>
+</html>

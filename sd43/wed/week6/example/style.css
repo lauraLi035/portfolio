@@ -1,0 +1,14 @@
+.halloween_poem{
+	font-size:120%; 
+	text-align:center;
+	font-family:Comic Sans MS; 
+	color:white; 
+	background-image: url('http://cdn.history.com/sites/2/2015/03/hungry-history-the-halloween-pumpkin-an-american-history-E.jpeg');
+}
+
+h2{
+	font-size:160%; 
+	font-family:fantasy; 
+	color:orange;
+	margin-left: 40px;
+}
