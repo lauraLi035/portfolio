@@ -6,6 +6,19 @@
 		<link href="style.css" rel="stylesheet">
 	</head>
 	<body>
+	
+		<audio id="myAudio" controls>
+		  <source id="myAudio" src="bgSound.wav" type="audio/wav">
+		Your browser does not support the audio element.
+		</audio>
+
+		<script>
+			var vid = document.getElementById("myAudio");
+		    vid.autoplay = true;
+		    vid.loop = true;
+		</script>
+
+
 
 		<h2>BOO!</h2>
 		<pre>

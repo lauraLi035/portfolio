@@ -22,6 +22,7 @@
 <body>
 	<!-- navbar ================================================== -->
 	<nav class="navbar navbar-default navbar-fixed-top">
+		
 		<div class="container">		
 			<a href="../" class="navbar-brand">
 				Introduction to Web Development
@@ -81,6 +82,7 @@
 			<div class="col-xs-6 col-sm-offset-2 col-sm-4">
 			<h3>Topics Covered</h3>
 			<blockquote>
+				<div>background music and auto replay</div>
 				<div>simple CSS rules</div>
 				<div>to select based on element</div>
 				<div>.class</div>
@@ -93,8 +95,9 @@
 			<h3>In class Examples</h3>
 			<blockquote>
 				<div><a href="example/example1.html">Example 1</a></div>
-				<div><a href="example/example.zip">download as zip</a></div>
-
+				<div><a href="example/example.zip">download as zip</a></div><br>
+				
+				<div><a href="example/bgSound.wav">download this .wav sound file </a></div>
 				<div><a href="example/quiz1.html">quiz </a></div>
 
 			</blockquote>
@@ -111,6 +114,32 @@
 						Key points
 					</h3>
 					<div class="list-group">
+
+					<a class="list-group-item list-group-item-action">
+					    <h5 class="list-group-item-heading">HTML5 Audio</h5>
+					    <p class="list-group-item-text">
+					    	The HTML5 &lt; audio&gt; element specifies a standard way to embed audio in a web page. It has many built in properties, we are going to try autoplay, and loop. First, we need a sound file. 
+
+					    	<br>
+					    	<br>
+
+					    	&lt;audio id="myAudio" controls&gt; <br>
+							  &lt;source id="myAudio" src="bgSound.wav" type="audio/wav"&gt; <br>
+							Your browser does not support the audio element.<br>
+							&lt;/audio&gt; 
+							<br>
+							<br>
+
+
+							&lt;script&gt; <br>
+								var vid = document.getElementById("myAudio");<br>
+							    vid.autoplay = true;<br>
+							    vid.loop = true;<br>
+							&lt;/script&gt; <br>
+
+						</p>
+					  </a>
+
 					  <a class="list-group-item list-group-item-action">
 					    <h5 class="list-group-item-heading">simple CSS rules</h5>
 					    <p class="list-group-item-text">
@@ -226,9 +255,11 @@
 						additional references for today
 					</h3>
 					<div class="list-group">
-						<a class="list-group-item list-group-item-action list-group-item-warning" href="http://www.w3schools.com/css/css_border.asp">CSS Border Properties from W3school</a>
+						<a class="list-group-item list-group-item-action list-group-item-warning" href="http://www.w3schools.com/html/html5_audio.asp">HTML5 Audio from W3school</a>
 
-						<a class="list-group-item list-group-item-action list-group-item-info" href="http://www.w3schools.com/css/css_margin.asp">CSS Margins from W3school</a></li>
+						<a class="list-group-item list-group-item-action list-group-item-info" href="http://www.w3schools.com/css/css_border.asp">CSS Border Properties from W3school</a>
+
+						<a class="list-group-item list-group-item-action list-group-item-warning" href="http://www.w3schools.com/css/css_margin.asp">CSS Margins from W3school</a></li>
 
 						<a class="list-group-item list-group-item-action list-group-item-info" href="http://www.w3schools.com/css/css_dimension.asp">CSS Height and Width from W3school</a></li>
 
