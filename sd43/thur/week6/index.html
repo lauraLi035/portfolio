@@ -111,19 +111,31 @@
 						Key points
 					</h3>
 					<div class="list-group">
-						 <a class="list-group-item list-group-item-action">
-						    <h5 class="list-group-item-heading">more attribute on &lt; img&gt;</h5>
-						    <p class="list-group-item-text">Images are defined with the &lt; img &gt;<br>
-						    The source file (URL), alternative text (will show note when it is not working), width, and height are provided as attributes
-						    <br>
-						    <br>
-						    <div>
-						    &lt; img src="pokemon.jpg" alt="pokemon not working" width="490" height="245"&gt; </div>
-						    <br>
-						    <div>
-						    &lt; img src="http://www.pokemongo.com/static/assets/images/pokemon_go_logo.png" alt="pokemon not working" width="50%" height="300"&gt; </div>
-						    </p>
+					 <a class="list-group-item list-group-item-action">
+					    <h5 class="list-group-item-heading">HTML5 Audio</h5>
+					    <p class="list-group-item-text">
+					    	The HTML5 &lt; audio&gt; element specifies a standard way to embed audio in a web page. It has many built in properties, we are going to try autoplay, and loop. First, we need a sound file. 
+
+					    	<br>
+					    	<br>
+
+					    	&lt;audio id="myAudio" controls&gt; <br>
+							  &lt;source id="myAudio" src="bgSound.wav" type="audio/wav"&gt; <br>
+							Your browser does not support the audio element.<br>
+							&lt;/audio&gt; 
+							<br>
+							<br>
+						
+
+							&lt;script&gt; <br>
+								var vid = document.getElementById("myAudio");<br>
+							    vid.autoplay = true;<br>
+							    vid.loop = true;<br>
+							&lt;/script&gt; <br>
+
+						</p>
 					  </a>
+					  
 					  <a class="list-group-item list-group-item-action">
 					    <h5 class="list-group-item-heading">simple CSS rules</h5>
 					    <p class="list-group-item-text">
