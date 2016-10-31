@@ -1,14 +1,74 @@
-.halloween_poem{
-	font-size:120%; 
+body{
+	
 	text-align:center;
 	font-family:Comic Sans MS; 
-	color:white; 
-	background-image: url('http://cdn.history.com/sites/2/2015/03/hungry-history-the-halloween-pumpkin-an-american-history-E.jpeg');
+	color:cornsilk; 
+	background-image: url('asset/bg.jpg');
+	font-size:120%; 
 }
 
 h2{
 	font-size:160%; 
 	font-family:fantasy; 
-	color:orange;
-	margin-left: 40px;
+	color:aliceblue;
+}
+
+audio{
+	display: none;
+}
+.icon{
+	width: 22%;
+	float: left;
+	padding-left: 20px;
+
+	opacity: 0.76;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.title_text{
+	float: left;
+	margin-left:5%;
+
+}
+.title{
+	clear:both;
+	/*margin: 5px 100px 15px 100px;*/
+
+	margin: 25px auto 15px auto;
+	width: 500px;
+
+}
+
+.intro{
+
+	clear:both;
+	padding-top: 50px;
+}
+.body_decoration{
+
+	clear:both;
+	width: 300px;
+	padding-top: 50px;
+
+	opacity: 0.3;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.head_decoration{
+	width: 10%;
+	opacity: 0.48;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    padding-left: 30%;
+    margin-bottom: -150px;
+}
+
+.reflect{
+	transform:scaleX(-1);
+}
+
+.display_img{
+	padding-top: 30px;
+}
+.display_item{
+	margin: 0px 25px 0 25px;
+	width: 350px;
 }
