@@ -26,7 +26,16 @@
 
 <body>
 	<!-- navbar ================================================== -->
-	<div class="container">
+	<div id="nav-placeholder"></div>
+	<script>
+	$(function(){
+	  $("#nav-placeholder").load("nav.html");
+	  
+	  // document.getElementById('title').innerHTML="Laura Li";
+	});
+	</script>
+	
+<!-- 	<div class="container">
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<a class="navbar-brand" href="#">
 				<img class="icon" 
@@ -63,7 +72,7 @@
 				</div>
 			</div>
 		</nav>
-	</div>
+	</div> -->
 
 
 	<!-- intro ================================================== -->
