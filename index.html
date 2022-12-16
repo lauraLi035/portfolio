@@ -213,9 +213,15 @@
 
 	<!-- copyright ================================================== -->
 
-	<div class="copyright">
-		&#169; Laura Li 2019 | Created with Bootstrap
+	<!-- copyright ================================================== -->
+	<div class="copyright container">
+		&#169; Laura Li  2015 -  <span id='date-time'></span> | created with Bootstrap
 	</div>
+
+	<script>
+	var d = new Date();
+	document.getElementById('date-time').innerHTML=d.getFullYear();
+	</script>
 </body>
 </html>
 
