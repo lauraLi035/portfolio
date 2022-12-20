@@ -1,0 +1,160 @@
+body {
+    color: #2E4656; 
+	background-color: #F3F6F4;
+	/* width: 99%; */
+	font-size: 16px;
+	font-family: 'Quicksand';
+}
+
+header{
+	background: #2E4656; 
+	color: #fff;
+	padding: 2% 5% 1% 5%;
+}
+.logo{
+	width:50px;
+	vertical-align: text-bottom;
+  }
+.row{
+	margin-right: 0;
+	margin-left: 0;
+	padding-left: 0;
+	padding-right: 0;
+	--bs-gutter-x: 0;
+}
+.head{
+  width:100%;
+	padding: 0 5% 5% 5%;
+
+  }
+
+  .bgImage{
+	background-image:url("../assets/images/product/2/bg.jpeg");
+	height: 450px;
+    width: 100%; 
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+
+  .shopBox{
+	background-color: #F3F6F4;
+	opacity:0.8;
+	font-size: 20px;
+	width: 220px;
+	height: 70px;
+	margin-left: 5%;
+	margin-bottom: 25px;
+	padding: 20px;
+	font-weight: lighter;
+  }
+	
+	.allCap{
+		text-transform: uppercase;
+	}
+	
+	.center{	
+		display: flex;
+		justify-content: center;
+		text-align:center;
+	}
+	.centerAlign{
+		text-align: center;
+		position: relative;
+		margin-right: auto;
+		margin-left: auto;
+	}
+  .animated-gif{
+    height: 120px;
+    width: 200px;
+	margin: 25% 0 15% 0;
+}
+  img{
+	max-width: 100%;
+    max-height: 100%;
+  }
+  .lightBg{
+	width: 100%;
+	background-color: #F3F6F4;
+	color:#2E4656;
+	padding: 150px 5% 2% 5%;
+  }
+
+  .littleSub{
+	font-size: 20px;
+	margin-bottom: 5%;
+	font-weight: bolder;
+  }
+
+  .custom-info{
+	background-color:rgba(240, 244, 255, 1);
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px; 
+}
+ 
+.custom-repair{
+	width:70%;
+	margin:auto;
+}
+
+  .contact{
+	padding: 10% 0 10% 0;
+	width: 100%;
+	max-width: 350px;
+	margin: 0 auto 0 auto;
+	text-align: center;
+  }
+
+  .contact-container{
+	  margin-left: 5%;
+	  margin-right: 5%;
+	  width: 90%;
+  }
+.modal-body{
+	padding-top: 50px;
+	background-color: #F0F0F0;
+}
+.form-control{
+	border-radius: 10px;
+	border-style: none;
+	padding-left: 5px;
+	background-color: #fff;
+}
+
+  .submit{
+	  background-color: #2E4656;
+	  color: #fff;
+	  border-radius: 10rem;
+	  width: 150px;
+	  margin: 8% auto 0 auto;
+  }
+
+.para{
+    margin-left: 13%;
+    width: 75%;
+}
+
+  .footer-container {
+	background-color:#2E4656;
+	width: auto;
+	padding: 0 15px;
+  }
+  
+  .centerLogo{
+	width: 15%;
+	margin: 5% 0 5% 0;
+  }
+  .inlineA a:link, a:visited{
+	color: white;
+	font-size: 22px;
+  }
+  .footer{
+	color: white;
+  }
+  .footer a:link, a:visited{
+	color: white;
+ 	background-color: transparent;
+  	text-decoration: none;
+  }
+
+  

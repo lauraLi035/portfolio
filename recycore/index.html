@@ -1,0 +1,148 @@
+<html ng-app="portfolio">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Laura Li</title>
+
+	<script src="../bower_components/angular/angular.min.js"></script>
+	
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+   <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<link href="../css/index.css" rel="stylesheet">
+	<link href="../css/projects.css" rel="stylesheet">
+	<link rel="icon" href="../img/favicon.ico">
+
+	<script src="recycoreCtrl.js"></script>
+</head>
+
+
+<body>
+	<div id="nav-placeholder"></div>
+	<script>
+	$(function(){
+	  $("#nav-placeholder").load("../nav.html");
+	});
+	</script>
+
+
+	<!-- intro ================================================== -->
+	<div class="recycore-header">
+	</div>
+
+
+	<!-- content ================================================== -->
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-xs-12 col-sm-12 col-md-3 projects text">
+				<div class="col-xs-6 col-sm-3 col-md-12">
+					<h3>Type</h3>
+					<blockquote>
+							<div>Graphic Design</div>
+							<div>Solo</div>
+					</blockquote>
+				</div>	
+				
+				<div class="col-xs-6 col-sm-3 col-md-12">
+				<h3>Role</h3>
+				<blockquote>
+						<div>Create & Design Printal & Digital Edition</div>
+						<div>User Testing</div>
+				</blockquote>	
+				</div>
+				
+				<div class="col-xs-6 col-sm-3 col-md-12">
+				<h3>Tools</h3>
+				<blockquote>
+						<div>Illustrator</div>
+						<div>Photoshop </div>
+						<div>InDesign</div>
+				</blockquote>	
+				</div>
+				
+				<div class="col-xs-6 col-sm-3 col-md-12">
+				<h3>Time</h3>
+				<blockquote>
+						<div>4 week project</div>
+						<div>Nov 2022 - Dec 2022</div>
+				</blockquote>	
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-md-8" style="margin-top: 8%">
+				<div ng-controller="recycoreCtrl">
+				    <carousel interval="myInterval">
+				      <slide ng-repeat="slide in slides">
+
+				        <img ng-src="{{slide.img}}" style="margin:auto; width:100%">
+				        {{slide.text}}
+				        <div class="carousel-caption"></div>
+				        
+				      </slide>
+				    </carousel>
+				</div>
+			</div>
+		</div>
+			<div class="aboutText" >
+				<div class="text">
+					<h2>
+						A child play
+					</h2>
+					<p>
+						WitChase is a 2D puzzle mobile game designed for Android Tablet. The main play focuses on exporling the game world and combing items. The story begin when the main character, Eithne a witch going on a journey to defeat the evil villain through exploring and crafting items. By fulfilling the NPCs' requests. 
+					</p>
+				</div>
+			</div>
+
+			<div class="aboutText" >
+				<div class="text">
+					<h3>
+						Process
+					</h3>
+					<blockquote>
+						As we were a five member team working on a full term project. We had significant amount of discussions on iteration and refining ideas. We initially draw out the storyboards, characters interface to communicate ideas, laster we practice our idea into digital formats using both Photoshop and Illustrator finally built our game prototype with Unity2D.
+					</blockquote>
+				</div>
+			</div>
+
+			<div class="aboutText" >
+				<div class="projects text">
+					<h2>
+						My Role
+					</h2>
+					<blockquote>
+						I led story board development, gameplay iteration, user interface development and user experience refinement. I conducted user testing sessions and collected user feedback through interview, survey and questionnaire. Later I analyzed and reflected user feedback to refine for better usability and game experience.
+					</blockquote>
+				</div>
+			</div>
+
+			<div class="aboutText" >
+				<div class="projects text">
+					<h2>
+						Result
+					</h2>
+					<blockquote>
+						Throughout the process of the project, I developed my user researching and analytical skills which helped me to reflect on feedback to refine user experience and our team ended up being one of the top popular games in public voting during school showcase session.
+					</blockquote>
+				</div>
+			</div>
+	</div>
+
+	<!-- copyright ================================================== -->
+	<div class="copyright container">
+		&#169; Laura Li  2015 -  <span id='date-time'></span> | created with Bootstrap
+	</div>
+
+	<script>
+	var d = new Date();
+	document.getElementById('date-time').innerHTML=d.getFullYear();
+	</script>
+	
+</body>
+</html>
