@@ -1,0 +1,176 @@
+<html ng-app="portfolio">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Laura Li</title>
+
+	<script src="../bower_components/angular/angular.min.js"></script>
+	
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+   <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<link href="../css/index.css" rel="stylesheet">
+	<link href="../css/projects.css" rel="stylesheet">
+	<link rel="icon" href="../img/favicon.ico">
+
+	<script src="nailCtrl.js"></script>
+</head>
+
+
+<body>
+	<div id="nav-placeholder"></div>
+	<script>
+	$(function(){
+	  $("#nav-placeholder").load("../nav.html");
+	});
+	</script>
+
+
+	<!-- intro ================================================== -->
+	<div class="nail-header">
+	</div>
+
+
+	<!-- content ================================================== -->
+	<div class="container">
+		<div class="row block">
+			
+			<div class="col-xs-12 col-sm-12 col-md-3 projects text">
+				<div class="col-xs-6 col-sm-3 col-md-12">
+					<h3>Type</h3>
+					<blockquote>
+							<div>Graphic Design for a Children's Book </div>
+					</blockquote>
+				</div>	
+				
+				<div class="col-xs-6 col-sm-3 col-md-12">
+				<h3>Role</h3>
+				<blockquote>
+						<div>Create Printal & Digital</div>
+						<div>User Testing</div>
+				</blockquote>	
+				</div>
+				
+				<div class="col-xs-6 col-sm-3 col-md-12">
+				<h3>Tools</h3>
+				<blockquote>
+						<div>Illustrator</div>
+						<div>Photoshop </div>
+						<div>InDesign</div>
+				</blockquote>	
+				</div>
+				
+				<div class="col-xs-6 col-sm-3 col-md-12">
+				<h3>Time</h3>
+				<blockquote>
+						<div>6 week project</div>
+						<div>Nov 2021 - Jan 2021</div>
+				</blockquote>	
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-md-8" style="margin-top: 8%">
+				<div ng-controller="nailCtrl">
+				    <carousel interval="myInterval">
+				      <slide ng-repeat="slide in slides">
+
+				        <img ng-src="{{slide.img}}" style="margin:auto; width:100%">
+				        {{slide.text}}
+				        <div class="carousel-caption"></div>
+				        
+				      </slide>
+				    </carousel>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4" >
+				<img class="logo" src="../img/nails/logo.png">
+			</div>
+			<div class="col-md-8 " >
+				<div class="text">
+					<div class="row">
+						
+						<h2 class="col-md-9">
+							The Hundred Uses of Nails 
+							<br> 
+							- An Interactive children’s book
+
+						</h2>
+
+						<div class="exampleBox col-md-3"> 
+							<a class="exampleLink"  href="../resume/Mandarin.pdf"> Mandarin Version</a>
+						</div>
+						
+					</div>
+
+
+					<p>
+						The Hundred Uses of Nails is a book that I wrote, designed, and illustrated intender for my daughter. The book is designed with push, pull, slide, rotate, and flap mechanisms perfect for young readers, ages 2-6 years old. With interactive system background, I combined fun play with educational purposes mainly promote toddlers’ personal hygiene issues. This book also could be used to develop younger children fine motor skills, at the same time think critically about body parts when comparing with other animals. A physical copy of the book is created for user testing amount 5 children, with great feedbacks. Sadly due to cost of printing, this boos is not published. 
+					</p>
+				</div>
+			</div>
+
+			
+			
+
+		</div>
+			
+		<div class="row block">
+			<div class="col-md-4" >
+				<img class="featurette-image img-responsive"
+					src="../img/nails/squirrel.gif" alt="children Image">
+				
+			</div>
+
+			<div class="col-md-8" >
+				<div class="text">
+					<h3>
+						Process
+					</h3>
+					<blockquote>
+						The book is designed with push, pull, slide, rotate, and flap mechanisms perfect for young readers to discover on their own. Initially I draw out the storyboards, characters interface to try ideas on my daughter. Later created digital formats using both Illustrator.
+					</blockquote>
+				</div>
+			</div>
+			
+			
+		</div>
+
+
+
+			<div class="row block" >
+				<div class="projects text col-md-10 col-md-offset-1">
+					<h2>
+						Result
+					</h2>
+					<blockquote>
+						A physical copy of the book is created for user testing amount 5 children collected user feedback through interview, with great feedbacks. Sadly due to cost of printing, this boos is not published. 
+					</blockquote>
+				</div>
+				<img class="featurette-image img-responsive"
+					src="../img/nails/ux.jpg" alt="children Image" style="margin: 0 auto 0 auto;">
+
+			</div>
+
+			
+	</div>
+
+	<!-- copyright ================================================== -->
+	<div class="copyright container">
+		&#169; Laura Li  2015 -  <span id='date-time'></span> | created with Bootstrap
+	</div>
+
+	<script>
+	var d = new Date();
+	document.getElementById('date-time').innerHTML=d.getFullYear();
+	</script>
+	
+</body>
+</html>
