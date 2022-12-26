@@ -2,36 +2,80 @@
 /*head image
 -------------------------------------------------- */
 
-.laptop-header, .wichase-header, .natureHeat-header, .littleSheep-header, .invilo-header
+.recycore-header, .nail-header, .cinfluencer-header, .wma-header
 {
-	background-image: url('../img/laptop-head.jpg');
+	background-image: url('../img/recycore/recycore-head.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
 	width: 100%;
-	height: 60%;
+	height: 100%;
 	margin: 0;
 }
+.lightBg{
+	background-color: #f6f6f6;
+}
+.row{
+	max-width: 1200px;
+	margin: 0 auto 0 auto;
+}
+.container{
+	width: 100%;
+	padding: 0;
+}
+.nail-header{
+	background-image: url('../img/nails/nail-head.jpg');
+}
+.cinfluencer-header{
+	background-image: url('../img/cinfluencer/cinfluencer-head.jpg');
+}
+.wma-header{
+	background-image: url('../img/wma/WMA-head.jpg');
+}
 
-.wichase-header{
-	background-image: url('../img/witchase-head.jpg');
-}
-.natureHeat-header{
-	background-image: url('../img/natureHeat-head.jpg');
-}
 
-.invilo-header{
-	background-image: url('../img/invilo-head.jpg');
-}
-.littleSheep-header{
-	background-image: url('../img/littleSheep-head.jpg');
+.headerMobile{
+	height: 30%;
 }
 
 /*proj detail
 -------------------------------------------------- */
 .text {
-	margin: 30px 20px 0 30px;
+	padding: 30px 20px 0 30px;
 	color: #043447;
+}
+
+a.exampleLink:link, a.exampleLink:visited,a.exampleLink:hover, a.exampleLink:active{
+
+  text-align: right;
+  padding: 5px;
+  color: #043447;
+  border: solid #043447;
+  background-color: #f6fdfd;
+  margin: 10% auto 10% auto;
+
+}
+a.exampleLink:hover{
+	background-color: #bbb;
+  	color: #f6fdfd;
+  	border: solid #bbb;
+  	text-decoration: none;
+}
+.exampleBox{
+	margin: 8% auto 10% auto; 
+	text-align: center;
+}
+
+.logo{
+	clear: both;
+	width: 80%;
+	max-width: 250px;
+	margin: 0 auto 0 auto;
+	padding: 15% 0 5% 10%;
+}
+.block{
+	position: relative;
+	padding: 15% 0 15% 0;
 }
 
 .text div{
@@ -41,12 +85,9 @@
 blockquote{
 	font-size: 14px;
 }
-
-.inlivoImage{
-	margin-top: 5%;
-	/*margin-bottom: -5%;*/
+h2{
+	padding-bottom: 3%;
 }
-
 h5{
 	font-weight: bold;
 	color: #245497 !important;
