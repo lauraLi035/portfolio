@@ -6,19 +6,15 @@
 
 	<title>Laura Li</title>
 
-	<script src="../bower_components/angular/angular.min.js"></script>
-	
-    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-  
-    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-   <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+	<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.1.js"></script>
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
 	<link href="../css/index.css" rel="stylesheet">
 	<link href="../css/projects.css" rel="stylesheet">
 	<link rel="icon" href="../img/favicon.ico">
-
-	<script src="recycoreCtrl.js"></script>
 </head>
 
 
@@ -32,8 +28,9 @@
 
 
 	<!-- intro ================================================== -->
-	<div class="recycore-header">
-	</div>
+
+	<div class="recycore-header hidden-xs"></div>
+	<div class="recycore-header hidden-sm hidden-md hidden-lg headerMobile"></div>
 
 
 	<!-- content ================================================== -->
@@ -44,7 +41,11 @@
 				<div class="col-xs-6 col-sm-3 col-md-12">
 					<h3>Type</h3>
 					<blockquote>
+							<div>Branding</div>
+							<div>Iconography</div>
 							<div>Graphic Design</div>
+							<div>Web Design</div>
+							<div>Web Developement</div>
 							<div>Solo</div>
 					</blockquote>
 				</div>	
@@ -52,8 +53,11 @@
 				<div class="col-xs-6 col-sm-3 col-md-12">
 				<h3>Role</h3>
 				<blockquote>
-						<div>Create & Design Printal & Digital Edition</div>
-						<div>User Testing</div>
+						
+						<div>Copywriter</div>
+						<div>Researcher</div>
+						<div>Website Developer</div>
+						<div>Designer for Printal & Digital Website</div>
 				</blockquote>	
 				</div>
 				
@@ -63,80 +67,164 @@
 						<div>Illustrator</div>
 						<div>Photoshop </div>
 						<div>InDesign</div>
+						<div>Figma</div>
+						<div>HTML/CSS/JQuery/Bootstrap</div>
+
 				</blockquote>	
 				</div>
 				
 				<div class="col-xs-6 col-sm-3 col-md-12">
 				<h3>Time</h3>
 				<blockquote>
-						<div>4 week project</div>
-						<div>Nov 2022 - Dec 2022</div>
+						<div>6 week project</div>
+						<div>Oct 2021 - Nov 2021</div>
 				</blockquote>	
 				</div>
 			</div>
 
 			<div class="col-xs-12 col-md-8" style="margin-top: 8%">
-				<div ng-controller="recycoreCtrl">
-				    <carousel interval="myInterval">
-				      <slide ng-repeat="slide in slides">
-
-				        <img ng-src="{{slide.img}}" style="margin:auto; width:100%">
-				        {{slide.text}}
-				        <div class="carousel-caption"></div>
-				        
-				      </slide>
-				    </carousel>
-				</div>
+				<img class="featurette-image img-responsive"
+					src="../img/recycore/desktop.jpg" alt="desktop Image" style="margin: 0 auto 0 auto;">
+				
 			</div>
 		</div>
-			<div class="aboutText" >
+	</div>
+
+	<div class="container lightBg">
+		<div class="row block">
+			<div class="col-md-4" >
+				<img class="logo" src="../img/recycore/logo.svg">
+			</div>
+			<div class="col-md-8 " >
 				<div class="text">
-					<h2>
-						A child play
-					</h2>
+					<div class="row">
+						
+						<h2 class="col-xs-8">
+							Recycore
+							<br> 
+							-Graphic & Web Project 
+						</h2>
+
+						<div class="exampleBox col-xs-4"> 
+							<a class="exampleLink"  href="home.html"  target="_blank" rel="noreferrer noopener"> To Site</a>
+						</div>
+						
+					</div>
+
+
 					<p>
-						WitChase is a 2D puzzle mobile game designed for Android Tablet. The main play focuses on exporling the game world and combing items. The story begin when the main character, Eithne a witch going on a journey to defeat the evil villain through exploring and crafting items. By fulfilling the NPCs' requests. 
+						在sincubator 做的项目之一。这个项目是我从头开始做的，最后项目因为成本核算问题最终没有落地。但是这个项目是很能显示我的设计风格与能力的项目之一。这个项目我分别做了logo设计，infographic，网站设计与开发（Responsive Web Experience）。与一个printable的回收纸箱设计。 
+
+						Created promotional materials such as the business infographic and collection box 
+
 					</p>
 				</div>
 			</div>
+		</div>
+	</div>
 
-			<div class="aboutText" >
+	<div class="container ">	
+		<div class="row block">
+			<div class="col-md-7" >
 				<div class="text">
-					<h3>
-						Process
-					</h3>
-					<blockquote>
-						As we were a five member team working on a full term project. We had significant amount of discussions on iteration and refining ideas. We initially draw out the storyboards, characters interface to communicate ideas, laster we practice our idea into digital formats using both Photoshop and Illustrator finally built our game prototype with Unity2D.
-					</blockquote>
-				</div>
-			</div>
-
-			<div class="aboutText" >
-				<div class="projects text">
 					<h2>
-						My Role
+						Logo & graphic 设计
 					</h2>
 					<blockquote>
-						I led story board development, gameplay iteration, user interface development and user experience refinement. I conducted user testing sessions and collected user feedback through interview, survey and questionnaire. Later I analyzed and reflected user feedback to refine for better usability and game experience.
+						Logo 设计过程 + 选色 请BS一部分。 logo图
+						请BS 一部风graphic 的动图部分。用的是AI& PS完成
 					</blockquote>
 				</div>
 			</div>
+			<div class="col-md-5" >
+				<img class="featurette-image img-responsive"
+					src="../img/recycore/logoDesign.svg" alt="logoDesign Image">
+				
+			</div>
+		</div>
+	</div>
 
-			<div class="aboutText" >
-				<div class="projects text">
-					<h2>
-						Result
+	<div class="container lightBg">
+		<div class="row block">
+			<div class="col-md-7" >
+				<img class="featurette-image img-responsive"
+					src="../img/recycore/box.jpg" alt="box Image">
+				
+			</div>
+			<div class="col-md-5" >
+				<div class="text">
+					<h2 >
+						实体盒子设计
 					</h2>
+
+
+
 					<blockquote>
-						Throughout the process of the project, I developed my user researching and analytical skills which helped me to reflect on feedback to refine user experience and our team ended up being one of the top popular games in public voting during school showcase session.
+						原计划投放在各大电器，好比bestbuy 门口什么的，学校门口。希望从小朋友开始回收二手电线。最后因为合作成本问题未果。主要运用了 typography 请尽量BS
+
 					</blockquote>
 				</div>
 			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row block">
+			<div class="col-md-5" >
+				<div class="text row">
+					<h2 class="col-xs-8">
+						网站设计
+					</h2>
+					<div class="exampleBox col-xs-4"> 
+						<a class="exampleLink"  href="home.html"  target="_blank" rel="noreferrer noopener"> To Site</a>
+					</div>
+					<blockquote>
+						We, the development team start brainstorm with the marketing team, I created a flow chart to help the team better visualize to show all the main the interactions. I used Figma to create a high fidelity mockup to better illustrate the looks and feels then used the mockups to discuss with the dev and marketing team. I am in charge of front-end development which is being done. However, the project is being stoped at the first stage with shopping landing page. The website is development with HTML&CSS with Bootstrap.
+
+					</blockquote>
+				</div>
+			</div>
+				<div class="col-md-7" >
+				<iframe style="border: 1px solid rgba(0, 0, 0, 0.1); margin-top:10%;"  width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FGAnYziNmvTA0EqUfztdB1u%2Frecycore%3Fnode-id%3D0%253A1%26t%3DxSOtHZAzVUYKSQQj-1" allowfullscreen></iframe>
+				
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container lightBg">
+		<div class="row block" >
+			<div class="projects text col-md-10 col-md-offset-1">
+				<div class="row">
+					<h2 class="col-xs-8">
+						infographic & graphic 设计
+					</h2>
+					<div class="exampleBox col-xs-4"> 
+								<a class="exampleLink"  href="ewaste.html"  target="_blank" rel="noreferrer noopener"> life verson</a>
+					</div>
+				</div>
+					
+				<blockquote>
+					Created all content, infographic, and graphic elements used on the site. 请BS 
+					infographic， 目前是degital verson的 但共有2个使用方向1用于poster 展示，2在媒体上推广，并且用html 与css 做了一个动态版本的infographic。 
+
+				</blockquote>
+			</div>
+			<img class="featurette-image img-responsive "
+				src="../img/recycore/infographic.jpg" alt="infographic Image" style="margin: 0 auto 0 auto; width: 80%; min-width:350px;">
+
+		</div>
+	</div>
+
+
+
+
+
 	</div>
 
 	<!-- copyright ================================================== -->
 	<div class="copyright container">
-		&#169; Laura Li  2015 -  <span id='date-time'></span> | created with Bootstrap
+		designed and developed by Laura Li &#169; 2015 -  <span id='date-time'></span> |   with Bootstrap
 	</div>
 
 	<script>
