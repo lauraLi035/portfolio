@@ -15,6 +15,25 @@
 .lightBg{
 	background-color: #f6f6f6;
 }
+
+ .headbox{
+
+	color: #f6f6f6;
+
+	font-size: calc(15pt + 20 * (100vw / 1440));
+	line-height: calc(15pt + 18 * (100vw / 1440));
+	background-color: rgba(110,110,110,0.65);
+	width:50%;
+	min-width: 240px;
+	margin-left: 5%;
+	margin-bottom: 25px;
+	padding: 20px;
+	font-weight: bolder;
+	position: absolute;
+  bottom: 0;
+
+  }
+
 .row{
 	max-width: 1200px;
 	margin: 0 auto 0 auto;
