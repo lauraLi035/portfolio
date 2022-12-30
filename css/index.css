@@ -143,6 +143,26 @@ a.projLink, a.addresstext:active {color: #606060; text-decoration: none; }
   opacity: 0.65;
   -webkit-transition: all 0.5s ease-out;
 }
+
+
+.projHolder span img{
+  opacity: 0 !important;
+  position: absolute;
+  width: 85%;
+  padding: 7% 5% 6% 5% ;
+  -webkit-transition: all 0.5s ease-in;
+}
+
+.projHolder:hover span img{
+  display: block;
+  z-index: 9;
+  width: 95%;
+  opacity: 1 !important;
+  -webkit-transition: all 0.5s ease-out;
+  
+}
+
+
 .discription{
   margin-top: 10%;
   background-color: #f6fdfd;
