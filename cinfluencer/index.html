@@ -1,0 +1,161 @@
+<html ng-app="portfolio">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Laura Li</title>
+
+	<script src="../bower_components/angular/angular.min.js"></script>
+	
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+   <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<link href="../css/index.css" rel="stylesheet">
+	<link href="../css/projects.css" rel="stylesheet">
+	<link rel="icon" href="../img/favicon.ico">
+
+	<script src="cinfluencerCtrl.js"></script>
+</head>
+
+
+<body>
+	<div id="nav-placeholder"></div>
+	<script>
+	$(function(){
+	  $("#nav-placeholder").load("../nav.html");
+	});
+	</script>
+
+
+	<!-- intro ================================================== -->
+
+	<div class="cinfluencer-header hidden-xs">
+		<div class="headbox">
+			<p> Graphic & Web Project</p>
+		</div>
+	</div>
+	<div class="cinfluencer-header hidden-sm  hidden-md hidden-lg headerMobile"></div>
+
+	<!-- content ================================================== -->
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-xs-12 col-sm-12 col-md-3 projects text">
+				<div class="col-xs-12 col-sm-4 col-md-12">
+					<h3>Role</h3>
+					<blockquote>
+							<div>Copywriter</div>
+							<div>Website Developer</div>
+							<div>Designer for Printal & Digital Posters</div>
+							<div>Website Designer</div>
+					</blockquote>	
+				</div>	
+				
+				<div class="col-xs-6 col-sm-4 col-md-12">
+					<h3>Type</h3>
+					<blockquote>
+							<div>Graphic Design</div>
+							<div>Web Design</div>
+							<div>Web Developement</div>
+							<div>Solo</div>
+					</blockquote>
+				</div>
+				
+				<div class="col-xs-6 col-sm-4 col-md-12">
+				<h3>Tools</h3>
+				<blockquote>
+						<div>Illustrator</div>
+						<div>Photoshop </div>
+						<div>InDesign</div>
+						<div>Figma</div>
+						<div>HTML/CSS/Bootstrap
+						</div>
+				</blockquote>	
+				</div>
+				
+			</div>
+			<div class="col-xs-12 col-md-8" style="margin-top: 8%">
+				<img class="featurette-image img-responsive"
+					src="../img/cinfluencer/desktop.jpeg" alt="desktop Image" style="margin: 0 auto 0 auto;">
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="container lightBg">
+		<div class="row block">
+			<div class="col-md-7" >
+				<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);margin-top:10%;"  width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fqw0jjlzURNuBXi8tMGSfNC%2F%25E4%25B8%25AD%25E7%25BA%25A2%25E7%25BD%2591%3Fnode-id%3D0%253A1%26t%3D7Cxoe2eaByHPMG5P-1" allowfullscreen></iframe>
+			</div>
+			<div class="col-md-5 " >
+				<div class="text">
+					<div class="row">
+						<h2 class="col-xs-8">
+							Cinfluencer
+							<br> 
+							- 8 week project 
+						</h2>
+						<div class="exampleBox col-xs-4"> 
+							<a class="exampleLink"  href="https://www.cinfluencer.com/"  target="_blank" rel="noreferrer noopener"> To Site</a>
+						</div>				
+					</div>
+					<p>
+						Cinfluencer is a start-up digital platform for internet celebrities by   
+						<a href="https://www.sincubator.com/indexen.html"  target="_blank" rel="noreferrer noopener"> Sincubator</a>
+
+						, a Vancouver tech incubator. Cinfluencer is dedicated to providing internet celebrities and KOIs from all sectors of the internet with a hub to advertise, expand their digital footprint and secure opportunities for commercial work. <br><br>
+
+I kickstarted the project by building a mockup using Figma, which was approved by the supervisor. The next step was to build a mobile responsive website using HTML CSS by bootstrap. Cinfluencer is still at the start stage of the project, limited marketing assets needed. Including posters, a mobile responsive showcase website with just a landing page.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<div class="container">
+		<div class="row block" >
+			<div class="projects text col-md-10 col-md-offset-1">
+				<div class="row">
+					<h2 class="col-xs-8">
+						 Graphic Design - Digital & Printable
+					</h2>
+				</div>
+					
+				<blockquote>
+					In addition to completing the website, the project involved creating brand-new visual assets for Cinfluencer for marketing purposes. The assets needed to adapt to digital platforms include, but are not limited to, Wechat, Weibo, Twitter Facebook, Instagram, etc., as well as conventional printed media. I ended up producing various formats and versions of the visual assets for their respective use while ensuring a coherent look based on the branding and style guidelines.
+
+				</blockquote>
+			</div>
+		</div>
+
+		<div style="margin: -5% auto 10% auto; width: 80%; min-width:350px;">
+			<div ng-controller="cinfluencerCtrl">
+			    <carousel interval="myInterval">
+			      <slide ng-repeat="slide in slides">
+
+			        <img ng-src="{{slide.img}}" style="margin:auto; width:100%">
+			        {{slide.text}}
+			        <div class="carousel-caption"></div>
+			        
+			      </slide>
+			    </carousel>
+			</div>
+		</div>
+	</div>
+
+	<!-- copyright ================================================== -->
+	<div class="copyright container">
+		designed and developed by Laura Li &#169; 2015 -  <span id='date-time'></span> |   with Bootstrap
+	</div>
+
+	<script>
+	var d = new Date();
+	document.getElementById('date-time').innerHTML=d.getFullYear();
+	</script>
+	
+</body>
+</html>
