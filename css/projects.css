@@ -2,7 +2,7 @@
 /*head image
 -------------------------------------------------- */
 
-.recycore-header, .nail-header, .cinfluencer-header, .wma-header
+.recycore-header, .nail-header, .cinfluencer-header, .wma-header, .umel-header, .vic1-header
 {
 	background-image: url('../img/recycore/recycore-head.jpg');
 	background-size: cover;
@@ -49,6 +49,14 @@
 	background-image: url('../img/wma/WMA-head.jpg');
 }
 
+.umel-header{
+	background-image: url('../img/umel/umel-head.jpg');
+}
+
+.vic1-header{
+	background-image: url('../img/vic1/vic1-head.jpg');
+}
+
 
 .headerMobile{
 	height: 30%;
@@ -65,8 +73,8 @@ a.exampleLink:link, a.exampleLink:visited,a.exampleLink:hover, a.exampleLink:act
 
   text-align: right;
   padding: 5px;
-  color: #043447;
-  border: solid #043447;
+  color: #245497;
+  border: solid #245497;
   background-color: #f6fdfd;
   margin: 10% auto 10% auto;
 
@@ -76,6 +84,7 @@ a.exampleLink:hover{
   	color: #f6fdfd;
   	border: solid #bbb;
   	text-decoration: none;
+
 }
 .exampleBox{
 	margin: 8% auto 10% auto; 
@@ -103,6 +112,7 @@ blockquote{
 }
 h2{
 	padding-bottom: 3%;
+	color: #245497;
 }
 h5{
 	font-weight: bold;

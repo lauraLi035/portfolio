@@ -1,0 +1,164 @@
+<html ng-app="portfolio">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Laura Li</title>
+
+	<script src="../bower_components/angular/angular.min.js"></script>
+	
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+   <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	
+	<link href="../css/index.css" rel="stylesheet">
+	<link href="../css/projects.css" rel="stylesheet">
+	<link rel="icon" href="../img/favicon.ico">
+
+	<script>if (document.URL.substring(0,5) == "http:") window.location.replace('https:' + document.URL.substring(5));</script>
+
+</head>
+
+
+<body>
+	<div id="nav-placeholder"></div>
+	<script>
+	$(function(){
+	  $("#nav-placeholder").load("../nav.html");
+	});
+	</script>
+
+
+	<!-- intro ================================================== -->
+
+	<div class="umel-header hidden-xs">
+		<div class="headbox">
+			<p>Graphic Design Project</p>
+		</div>
+	</div>
+	<div class="umel-header hidden-sm hidden-md hidden-lg headerMobile">
+	</div>
+
+
+	<!-- content ================================================== -->
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-xs-12 col-sm-12 col-md-3 projects text">
+				<div class="col-xs-12 col-sm-4 col-md-12">
+					<h3>Role</h3>
+					<blockquote>
+
+						<div>Researcher</div>
+						<div>Printal & Digital Designer</div>
+					</blockquote>
+				</div>	
+				
+				<div class="col-xs-6 col-sm-4 col-md-12">
+					<h3>Type</h3>
+					<blockquote>
+							<div>Branding</div>
+							<div>Graphic Design</div>
+							<div>Iconography</div>
+							<div>Solo</div>
+					</blockquote>
+				</div>
+				
+				<div class="col-xs-6 col-sm-4 col-md-12">
+				<h3>Tools</h3>
+				<blockquote>
+						<div>Illustrator</div>
+						<div>Photoshop </div>
+						<div>InDesign</div>
+
+				</blockquote>	
+				</div>
+				
+			</div>
+
+			<div class="col-xs-12 col-md-8" style="margin-top: 8%">
+				<img class="featurette-image img-responsive"
+					src="../img/umel/businessCard.jpg" alt="bus card Image" style="margin: 0 auto 8% auto;">
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="container lightBg">
+		<div class="row block">
+			<div class="col-md-8" >
+				<img class="featurette-image img-responsive"
+					src="../img/umel/banner.jpg" alt="logoDesign Image">
+				
+			</div>
+			<div class="col-md-4 " >
+				<div class="text">
+					<div class="row">
+						
+						<h2 >
+							Umel Academy LTD
+						<br>- 2 week project
+
+						</h2>
+						
+					</div>
+
+
+					<p>
+						Umel Academy, formerly known as Beijing Future Cultural Center, has been around for 10 years. They provide a full range of tutoring services to students of all ages and skill levels. They have a team of experienced and certified tutors who are experts in their respective fields and bring a wealth of knowledge and experience to every tutoring session. As a graphic and branding designer, I helped them with the localization of the brand, by creating a new basic branding package including logo design, business card, envelope & letterhead, also one set of pull-up banners and signboards.
+
+
+
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="container ">	
+		<div class="row block">
+			<div class="col-md-4" >
+				<div class="text">
+					<h2>
+						Logo Design
+					</h2>
+					<blockquote>
+						When designing a logo, it's important to consider the target audience, which is Mandarin-speaking students 5-16 age group. The brand identity is youth and full of potential, and the intended message is the best education for the next generation. The logo is simple yet playful design, a integration of  names in both English and Chinese.
+					</blockquote>
+				</div>
+			</div>
+			<div class="col-md-8" >
+				<img class="featurette-image img-responsive"
+					src="../img/umel/logoDesign.jpg" alt="logoDesign Image">
+				
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+	</div>
+
+	<!-- copyright ================================================== -->
+	<div class="copyright container">
+		designed and developed by Laura Li &#169; 2015 -  <span id='date-time'></span> |   with Bootstrap
+	</div>
+
+	<script>
+	var d = new Date();
+	document.getElementById('date-time').innerHTML=d.getFullYear();
+	</script>
+	
+</body>
+</html>
