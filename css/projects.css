@@ -2,7 +2,7 @@
 /*head image
 -------------------------------------------------- */
 
-.recycore-header, .nail-header, .cinfluencer-header, .wma-header, .umel-header, .vic1-header
+.recycore-header, .nail-header, .cinfluencer-header, .wma-header, .umel-header, .vic1-header, .koilaw-header, .keyconnect-header, .canfame-header
 {
 	background-image: url('../img/recycore/recycore-head.jpg');
 	background-size: cover;
@@ -55,6 +55,18 @@
 
 .vic1-header{
 	background-image: url('../img/vic1/vic1-head.jpg');
+}
+
+.koilaw-header{
+	background-image: url('../img/koilaw/koilaw-head.jpg');
+}
+
+.keyconnect-header{
+	background-image: url('../img/keyconnect/keyconnect-head.jpg');
+}
+
+.canfame-header{
+	background-image: url('../img/canfame/canfame-head.jpg');
 }
 
 
